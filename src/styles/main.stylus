@@ -1,0 +1,23 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand)
+main_color = #359e5f
+
+*
+   margin 0
+   padding 0
+
+body
+    width 100%
+    max-width 800px
+    margin auto
+h1
+    color main_color
+    font-size 80px
+    font-family 'Quicksand'
+    margin 20px 10px
+hr
+    color main_color
+    background-color main_color
+    height 1px
+    border 0
+p
+    margin 20px 10px
