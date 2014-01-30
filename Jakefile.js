@@ -45,8 +45,8 @@ function makeZip(dir, zip) {
 					break;
 				default:
 					// Just add the file to the zip
-					var data = fs.readFileSync(real, 'utf-8');
-					zip.file(file, data);
+					var data = fs.readFileSync(real, 'base64');
+					zip.file(file, data, {base64:true});
 					break;
 			}
 		} else {
