@@ -1,0 +1,13 @@
+{
+	"name": "hector",
+	"author": "xouabita",
+	"version": "0.1.0",
+	"bin": {
+		"hector": "./bin/hector"
+	},
+	"dependencies": {
+		"jade": "*",
+		"stylus": "*",
+		"node-zip": "*"
+	}
+}
