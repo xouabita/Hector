@@ -63,11 +63,11 @@ desc('Build the src folder into .nw');
 task('build', function (params) {
 	var zip  = new JSZip();
 	makeZip('./src/', zip);
-	var data = zip.generate({base64:false,compression:'DEFLATE'});
+	var data = zip.generate();
 	if (!fs.existsSync('./build')) {
 		fs.mkdirSync('./build');
 	}
-	fs.writeFileSync('./build/app.nw', data, 'binary');
+	fs.writeFileSync('./build/app.nw', data, 'base64');
 });
 
 desc('Run the application');
