@@ -1,8 +1,0 @@
-{
-	"devDependencies":
-	{
-		"jade": "latest",
-		"stylus": "latest",
-		"node-zip": "latest"
-	}
-}
